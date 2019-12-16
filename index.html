@@ -151,6 +151,74 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-third" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/16/third/">在同一局域网下通过intelj idea连接sqlserver 2008r2数据库</a>
+    </h1>
+  
+
+        
+        <a href="/2019/12/16/third/" class="archive-article-date">
+  	<time datetime="2019-12-16T08:05:36.112Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>通过和我的数据库老师交流，我对服务器的登录有了新的认识：<br>直接连服务器的数据库管理系统进行认证，<br>还有一种思路，把字符串发给服务器，让服务器进行数据库认证<br>一般是第一种</p>
+<hr>
+<p>我一直以为客户端登录服务器就是客户端连接服务器，然后客户端把账号密码发给服务器，正确则能收到服务器的回应，<br>然而我的老师告诉我，让你的app登录连上服务器的数据库，将你的app发过去的账号密码让服务器的数据库去检索，如<br>果能检索到则登录成功。于是一扇新的大门在我眼前打开了</p>
+<hr>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2><p>首先确保服务器的数据库已经打开TCP并且端口为1433</p>
+<p>下载JDBC的jar包，将之导入工程文件</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/12/16/third/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-second-arctile" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     

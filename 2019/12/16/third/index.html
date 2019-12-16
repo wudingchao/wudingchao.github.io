@@ -6,16 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>我的第二篇博客 | AssrGa</title>
+  <title>在同一局域网下通过intelj idea连接sqlserver 2008r2数据库 | AssrGa</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="hexo n “学习…”今天在window上部署">
+  <meta name="description" content="通过和我的数据库老师交流，我对服务器的登录有了新的认识：直接连服务器的数据库管理系统进行认证，还有一种思路，把字符串发给服务器，让服务器进行数据库认证一般是第一种  我一直以为客户端登录服务器就是客户端连接服务器，然后客户端把账号密码发给服务器，正确则能收到服务器的回应，然而我的老师告诉我，让你的app登录连上服务器的数据库，将你的app发过去的账号密码让服务器的数据库去检索，如果能检索到则登录成">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第二篇博客">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;09&#x2F;second-arctile&#x2F;index.html">
+<meta property="og:title" content="在同一局域网下通过intelj idea连接sqlserver 2008r2数据库">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;16&#x2F;third&#x2F;index.html">
 <meta property="og:site_name" content="AssrGa">
-<meta property="og:description" content="hexo n “学习…”今天在window上部署">
+<meta property="og:description" content="通过和我的数据库老师交流，我对服务器的登录有了新的认识：直接连服务器的数据库管理系统进行认证，还有一种思路，把字符串发给服务器，让服务器进行数据库认证一般是第一种  我一直以为客户端登录服务器就是客户端连接服务器，然后客户端把账号密码发给服务器，正确则能收到服务器的回应，然而我的老师告诉我，让你的app登录连上服务器的数据库，将你的app发过去的账号密码让服务器的数据库去检索，如果能检索到则登录成">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2019-12-09T13:31:36.177Z">
+<meta property="og:updated_time" content="2019-12-16T08:23:52.523Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="AssrGa" type="application/atom+xml">
@@ -152,28 +152,32 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-second-arctile" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-third" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      我的第二篇博客
+      在同一局域网下通过intelj idea连接sqlserver 2008r2数据库
     </h1>
   
 
         
-        <a href="/2019/12/09/second-arctile/" class="archive-article-date">
-  	<time datetime="2019-12-09T13:28:49.775Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-09</time>
+        <a href="/2019/12/16/third/" class="archive-article-date">
+  	<time datetime="2019-12-16T08:05:36.112Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="hexo-n-“学习…”"><a href="#hexo-n-“学习…”" class="headerlink" title="hexo n “学习…”"></a>hexo n “学习…”</h2><p>今天在window上部署</p>
+        <h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>通过和我的数据库老师交流，我对服务器的登录有了新的认识：<br>直接连服务器的数据库管理系统进行认证，<br>还有一种思路，把字符串发给服务器，让服务器进行数据库认证<br>一般是第一种</p>
 <hr>
+<p>我一直以为客户端登录服务器就是客户端连接服务器，然后客户端把账号密码发给服务器，正确则能收到服务器的回应，<br>然而我的老师告诉我，让你的app登录连上服务器的数据库，将你的app发过去的账号密码让服务器的数据库去检索，如<br>果能检索到则登录成功。于是一扇新的大门在我眼前打开了</p>
+<hr>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2><p>首先确保服务器的数据库已经打开TCP并且端口为1433</p>
+<p>下载JDBC的jar包，将之导入工程文件</p>
 
       
 
@@ -253,7 +257,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/09/second-arctile/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/16/third/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -267,18 +271,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/12/16/third/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          在同一局域网下通过intelj idea连接sqlserver 2008r2数据库
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/12/09/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2019/12/09/second-arctile/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我的第二篇博客</div>
       <i class="icon-circle-right"></i>
     </a>
   
