@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="AssrGa">
 <meta property="og:description" content="hexo n “文章名称”创建文件后，通过vim或其他编辑器打开文件进行编辑 hexo g  生成 hexo d  发布到远端服务器 第二章内容  今天再来学习   第三章内容  这几周老师让我们做一个服务器的app，虽然有现成的app，但是没有源代码，服务器搭在实验室但是也没有源代码，各种开发全靠摸索，Android还要自己一点一点学，记录一下我的挣扎过程。  1.app反编译     在网上找">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2019-12-14T09:31:18.797Z">
+<meta property="og:updated_time" content="2019-12-17T02:01:49.038Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="AssrGa" type="application/atom+xml">
@@ -200,7 +200,8 @@ hexo d
 类名也用a、b、c代替了</code></pre><hr>
 <pre><code>2.实现登录过程
 不得不说自己实在是渣啊，这个登录困扰了我3个星期都没解决，因为用的是socket，我以为只是简单的建立连接，发送账号密码就ok了，刚好最近上完了通信网，做了我4天的那个tcp和udp实验还记忆尤新，结果瞎搞了一星期后发现这app用的是OKhttp3--一个库，用这个封装好的库负责所有的网络请求。这个是目前最流行的网络架构，菜鸡的我学了一星期还是没有实现登录，我遇到的问题是，我不知道到底要传哪些东西给服务器，万般无奈，在网上学了用sokit去抓包（一款用于sokit的抓包工具），别说，还真好用，解决了我很多不懂得东西，让我渐渐对它的通信过程有了一点了解，我用别人做好得app去连接服务器，用sokit进行侦听，将手机登录时发给服务器得东西拦截了下来，发现是一串16进制的数字00 00 00 00 00 6E 00 01 00 00 13 00 03 00 07 43 6D 64 54   （类似于这种）
-我在自己做app时把这个发给服务器，并没有登录成功该有的反应，后面发现socket只能发byte[]数据，于是在每个数据前加0x，最后变成{0x03, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,0x00, 0x6E, 0x00, 0x01}这种，将这个发给服务器，果然得到了登录成功才该有的反应！</code></pre>
+我在自己做app时把这个发给服务器，并没有登录成功该有的反应，后面发现socket只能发byte[]数据，于是在每个数据前加0x，最后变成{0x03, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,0x00, 0x6E, 0x00, 0x01}这种，将这个发给服务器，果然得到了登录成功才该有的反应！</code></pre><hr>
+
       
 
       
@@ -342,7 +343,7 @@ hexo d
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 AssrGa
+    		&copy; 2021 AssrGa
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten

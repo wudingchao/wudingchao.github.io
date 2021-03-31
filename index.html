@@ -151,6 +151,96 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Linux学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/03/31/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Linux学习笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2021/03/31/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
+  	<time datetime="2021-03-31T08:59:47.293Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="CH1"><a href="#CH1" class="headerlink" title="CH1"></a>CH1</h2><ol>
+<li>命令解析器：<br> shell  —–  unix操作系统<br> bash  —–  Linux操作系统<br> 本质：根据命令的名字，调用对应的可执行程序</li>
+<li>Linux快捷键<br> A. 命令和路径补充：<br> B. 主键盘快捷键：<pre><code>a. 历史命令切换：
+    历史命令：history
+    向上遍历：Ctrl + P
+    向下遍历：Ctrl + N
+b. 光标移动：
+    向左：Ctrl + B
+    向右：Ctrl + F
+    移动到头部：Ctrl + A
+    移动到尾部：Ctrl + E
+c. 删除字符：
+    删除光标后边字符：Ctrl + D
+    删除光标前边字符：Ctrl + S/Backspace
+    删除光标前的所有内容：Ctrl + U
+    清屏：Ctrl + L</code></pre></li>
+<li>Linux系统目录结构：<br> A. 根目录 /：/下挂载下面所有目录<br> B. /bin：存放经常使用的命令<br> C. /boot：这里存放的是启动Linux是使用的可惜文件，包括一些链接文件以及镜像文件。<br> D. /dev：device缩写，存放外部设备，在linux在访问设备的方式和访问文件的方式相同。<br> E. /etc：存放所有系统管理所需要的配置文件和子目录。<br> F. /home：各个普通用户的主目录。<br> G. /lib：存放着系统最基本的动态连接共享库，类似于Windows中的DLL文件，几乎所有文件都要运用到共享库。<br> H. /lost +found：一般情况是空的，当系统非法关机后，存放一些文件。<br> I. /media：linux系统会自动识别一些设备，例如U盘，光驱等，当识别后，linux会将这些识别后的设备挂载在该文件下。<br> J. /mnt：系统提供该目录是为了让用户临时挂载别的文件系统，可将光驱挂载在/mnt/上，然后进入该文件就可以看见光驱中的内容。<br> K. /opt：主机额外安装软件所摆放的目录。<br> L. /proc：虚拟目录，系统内存的映射，我们可以直接访问这个目录来获取系统信息，，这个目录的内容不在硬盘上而在内存里，我们可以直接修改里面的某些文件，比如通过下面的命令来屏蔽主机的ping命令，是别人无法ping你的机器。<br> M. /root：超级用户主目录。<br> N. /sbin：超级用户使用的系统管理程序。<br> O. /selinux：redhat/centos特有，类似于防火墙。<br> P. /srv：存放一些服务启动之后需要提供的数据。<br> Q. /sys：2.6内核系统文件。<br> R. /tmp：临时文件。<br> S. /usr：非常重要的目录，用户的很多应用程序和文件都放在这个目录下，类似于Windows下的program files。<br> T. /usr/bin：系统用户使用的应用程序。<br> U. /usr/sbin：超级用户使用的比较高级的管理程序和系统守护程序。<br> V. /usr/src：内核源代码的放置目录.<br> W. /var：这个目录中存放着不断扩充的东西，我们习惯将那些经常被修改的目录存放在这个目录下，包括各种日志文件。</li>
+<li>用户目录：<br> A. 绝对路径：从根目录开始写 /home/itcast/aa<br> B. 相对路径：相对于当前的工作目录而言<pre><code>a. .     当前目录
+b. ..   当前的上一级目录
+c. -     在临近的两个目录直接切换   cd -</code></pre> C. [czy@localhost ~]$ <pre><code>a. czy：当前登录的用户
+b. localhost：主机名
+c. ~：家目录，可代替czy@localhost，宿主目录
+d. $：当前目录为普通用户
+e. #：超级用户root，可用sudo su切换为超级用户，可用exit退回</code></pre></li>
+<li>文件和目录操作：<br> A. 查看我的目录<pre><code>a. tree -- 以树状结构成列出所有文件目录</code></pre></li>
+</ol>
+<hr>
+<h2 id="CH2"><a href="#CH2" class="headerlink" title="CH2"></a>CH2</h2><hr>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/03/31/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-third" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -177,6 +267,7 @@
 <hr>
 <h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2><p>首先确保服务器的数据库已经打开TCP并且端口为1433</p>
 <p>下载JDBC的jar包，将之导入工程文件</p>
+<h2 id="-2"><a href="#-2" class="headerlink" title=""></a></h2><p>Unable to get provider androidx.lifecycle.ProcessLifecycleOwnerInitializer:<br>在模拟器上能正常运行，在手机上就各种崩溃。<br>这个煞笔bug，在网上百度了半天，结果在设置里的bulid下的debugger下的instant run里，把它关掉就好了</p>
 
       
 
@@ -406,7 +497,8 @@ hexo d
 类名也用a、b、c代替了</code></pre><hr>
 <pre><code>2.实现登录过程
 不得不说自己实在是渣啊，这个登录困扰了我3个星期都没解决，因为用的是socket，我以为只是简单的建立连接，发送账号密码就ok了，刚好最近上完了通信网，做了我4天的那个tcp和udp实验还记忆尤新，结果瞎搞了一星期后发现这app用的是OKhttp3--一个库，用这个封装好的库负责所有的网络请求。这个是目前最流行的网络架构，菜鸡的我学了一星期还是没有实现登录，我遇到的问题是，我不知道到底要传哪些东西给服务器，万般无奈，在网上学了用sokit去抓包（一款用于sokit的抓包工具），别说，还真好用，解决了我很多不懂得东西，让我渐渐对它的通信过程有了一点了解，我用别人做好得app去连接服务器，用sokit进行侦听，将手机登录时发给服务器得东西拦截了下来，发现是一串16进制的数字00 00 00 00 00 6E 00 01 00 00 13 00 03 00 07 43 6D 64 54   （类似于这种）
-我在自己做app时把这个发给服务器，并没有登录成功该有的反应，后面发现socket只能发byte[]数据，于是在每个数据前加0x，最后变成{0x03, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,0x00, 0x6E, 0x00, 0x01}这种，将这个发给服务器，果然得到了登录成功才该有的反应！</code></pre>
+我在自己做app时把这个发给服务器，并没有登录成功该有的反应，后面发现socket只能发byte[]数据，于是在每个数据前加0x，最后变成{0x03, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,0x00, 0x6E, 0x00, 0x01}这种，将这个发给服务器，果然得到了登录成功才该有的反应！</code></pre><hr>
+
       
 
       
@@ -458,7 +550,7 @@ hexo d
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 AssrGa
+    		&copy; 2021 AssrGa
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
